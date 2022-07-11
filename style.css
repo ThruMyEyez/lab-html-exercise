@@ -70,6 +70,7 @@ nav ul {
     margin: 0px 0px 0px 1.2rem;
     width: 220px;
     height: auto;
+    flex-flow: nowrap row-reverse;
 }
 #join-btn {
     font-size: 14px;    
@@ -95,21 +96,25 @@ nav ul {
     margin: 0px 0px 2.5rem 0px;
 }
 #introduction article {
-    margin-bottom: 3em;
+    margin-bottom: 3rem;
     width: 430px;
     text-align: center;
+}
+#section1-linkbox {
+    display: flex;
+    flex-flow: nowrap row;
 }
 #plans-btn {
     background-color: #fb3b49;
     color: white;
-    margin: 1em;
+    margin: 1rem;
     padding: 12px 64px;
     font-weight: bold;
     box-shadow: 8px 8px 0 rgba(251, 59, 73, .2);
 }
 #join-free-btn {
     background-color: white;
-    margin: 1em;
+    margin: 1rem;
     font-weight: bold;
     padding: 12px 64px;
 } /* end section 1 */
@@ -137,6 +142,7 @@ nav ul {
 #section2 article {
     width: 34%;
     text-align: center;
+    font-size: 14px;
 } /* end section 2 */
 
 #arguments {    /* section 3 */
@@ -148,6 +154,11 @@ nav ul {
 .article-group {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+}
+.article-group > div {
+    margin-left: 12px;
 }
 #arguments h3 {
     color: #ed1c24;
@@ -156,15 +167,10 @@ nav ul {
 #arguments img {
     width: 32px;
 }
-.article-group {
-    width: 75%;
-}
-.article-group > div {
-    width: 25%;
-    text-align: left;
-}
 .article-group p {
-    width: 15rem;
+    text-align: left;
+    width: 14rem;
+    font-size: 14px;
 }
 #createOrg {
     background-color: black;
